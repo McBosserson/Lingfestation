@@ -470,7 +470,7 @@ public sealed partial class ChangelingSystem
         eggComp.AugmentedEyesightPurchased = HasComp<ThermalVisionComponent>(uid);
 
         EnsureComp<AbsorbedComponent>(target);
-        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 200);
+        var dmg = new DamageSpecifier(_proto.Index(AbsorbedDamageGroup), 150);
         _damage.TryChangeDamage(target, dmg, false, false);
         _blood.ChangeBloodReagent(target, "FerrochromicAcid");
         _blood.SpillAllSolutions(target);
